@@ -1,30 +1,34 @@
-# TP6DPBO2425C2
+# TP6DPBO2526C2
 TUGAS PRAKTIKUM 6 DPBO SWING GAME Renaldy Heryana (2509867) Ilmu Komputer C2 Universitas Pendidikan Indonesia
 
 # janji
 Saya Renaldy Heryana dengan NIM 2509867 mengerjakan TP6 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 # STRUKTUR REPO
-<img src="struktur_repo.png" alt="gambar struktur file" width="400">
-
-Isi folder `src`:
 
 ```
-src
-├── FlappyBirdAssets
-│   ├── Audio
-│   │   └── BGM.wav
-│   ├── background.png
-│   ├── bird.png
-│   ├── lowerPipe.png
-│   └── upperPipe.png
-├── App.java
-├── Logic.java
-├── Pipe.java
-├── Player.java
-└── View.java
+TP6DPBO2526C2
+├── Dokumentasi
+│   └── DokumentasiProgram.mp4
+├── FlappyBird
+│   ├── .idea
+│   ├── src
+│   │   ├── FlappyBirdAssets
+│   │   │   ├── Audio
+│   │   │   │   └── BGM.wav
+│   │   │   ├── background.png
+│   │   │   ├── bird.png
+│   │   │   ├── lowerPipe.png
+│   │   │   └── upperPipe.png
+│   │   ├── App.java
+│   │   ├── Logic.java
+│   │   ├── Pipe.java
+│   │   ├── Player.java
+│   │   └── View.java
+│   ├── .gitignore
+│   └── FlappyBird.iml
+└── README.md
 ```
-
 
 # ALUR PROGRAM
 
@@ -172,5 +176,6 @@ Penjelasan atribut dan method dari class Logic. Class ini adalah otak dari game.
 
 # DOKUMENTASI
 
-Dokumentasi berupa video dari setiap fitur program.
+Dokumentasi berupa video program yang disimpan di folder `Dokumentasi`.
 
+https://github.com/user-attachments/assets/742e72d1-f60d-4ca3-8b2a-d3a0e2780a61
