@@ -12,6 +12,8 @@ public class View extends JPanel {
     private int width = 360;
     private int height = 640;
     private Logic logic;
+    // Gambar latar dimuat sekali di constructor agar tidak dibaca ulang dari disk di tiap frame.
+    private Image backgroundImage;
 
     // Konstanta posisi label skor agar tidak ada angka layout yang tersebar di kode.
     private static final int TITLE_ROW = 0;
@@ -26,7 +28,7 @@ public class View extends JPanel {
     public View(Logic logic){
         this.logic =  logic;
         setPreferredSize(new Dimension(width, height));
-        setBackground(Color.CYAN);
+        backgroundImage = new ImageIcon(getClass().getResource("FlappyBirdAssets/background.png")).getImage();
 
         // Panel harus focusable agar KeyListener dari Logic bisa menerima tombol keyboard.
         setFocusable(true);
@@ -62,6 +64,8 @@ public class View extends JPanel {
 
     // Menggambar burung lalu semua pipa. Dicek null karena View bisa digambar sebelum data siap.
     public void draw(Graphics g){
+        // Latar digambar pertama agar burung dan pipa tampil di atasnya.
+        g.drawImage(backgroundImage, 0, 0, width, height, null);
         // Bagian burung.
         Player player = logic.getPlayer();
         if(player != null) {
